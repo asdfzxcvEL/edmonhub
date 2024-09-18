@@ -1,0 +1,92 @@
+body {
+    font-family: "Inter", sans-serif;
+    color: white;
+    background: black;
+}
+
+body, ul, h1 {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: #1b1b1b;
+}
+
+ul {
+    margin: 0 2.5em 0 5%;
+    display: flex;
+    list-style-type: none;
+    padding: 1.5em 0;
+    color: white;
+    align-items: center;
+}
+
+.icon {
+    font-size: 2rem;
+    padding-right: 0.5em;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+.logo span {
+    background: #ffa31a;
+    padding: 0.1em;
+    margin-left: 0.1em;
+    border-radius: 3px;
+    color: black;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 2em 2.5em;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+li a:hover, .current-tab {
+    color: #ffa31a;
+    border-bottom: 2px solid #ffa31a;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.lyrics {
+    text-align: center;
+}
+
+h1 {
+    font-size: 9rem;
+    padding-top: 0.25em;
+}
+
+h1 em {
+    font-weight: 400;
+}
+
+.fade {
+    animation: fade-up 1.5s;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
