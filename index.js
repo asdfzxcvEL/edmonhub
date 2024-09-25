@@ -4,6 +4,7 @@ let count = 0
 let time = 3000
 
 const text = document.getElementById("text")
+const clips = document.getElementById("clips")
 
 function changeTextHtml() {
     const newText = lyrics[count]
@@ -14,8 +15,8 @@ function changeTextHtml() {
     text.classList.add('fade')
 }
 
-function render() {
-
+function getClipsHtml() {
+    return images.map(image => `<img src="${image}">`)
 }
 
 for (let lyric of lyrics) {
@@ -27,6 +28,5 @@ for (let lyric of lyrics) {
     }
 }
 
-render()
-
+document.getElementById("clips").innerHTML = 'getClipsHtml()'
 

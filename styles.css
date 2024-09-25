@@ -66,11 +66,14 @@ li a:hover, .current-tab {
 
 .lyrics {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
 }
 
 h1 {
     font-size: 3rem;
-    padding-top: 3em;
 }
 
 h1 em {
@@ -79,6 +82,11 @@ h1 em {
 
 .fade {
     animation: fade-up 1.5s;
+}
+
+.section-two {
+    background: white;
+    color: #1b1b1b;
 }
 
 @keyframes fade-up {
@@ -101,7 +109,7 @@ h1 em {
 
     h1 {
         font-size: 9rem;
-        padding-top: 1em;
+        padding-top: 0.25em;
     }
 
     .align-right {
@@ -114,5 +122,9 @@ h1 em {
     
     .logo {
         padding: 0;
+    }
+
+    .lyrics {
+        height: 90vh;
     }
 }
